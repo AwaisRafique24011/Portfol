@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Porfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- <link rel="stylesheet" href="About.css"> -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "x8LluiH7y-_eRjB7u",
+            });
+        })();
+    </script>
+
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="logo"><span>M</span>.Awais</div>
+        <ul class="navlist">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div id="menu-icon" class='bx bx-menu'></div>
+    </header>
+    <!-- home section -->
+    <section id="home" class="home">
+        <div class="home-content">
+            <h1>Hi! I'm M.Awais Rafique</h1>
+            <div class="change-text">
+                <h3>And I'm</h3>
+                <h3>
+                    <span class="word">Python&nbsp;&nbsp;Developer</span>
+                    <span class="word">Python&nbsp;&nbsp;Machine&nbsp;&nbsp;Learning</span>
+                    <span class="word">Frontent&nbsp;&nbsp;Developer</span>
+                </h3>
+            </div>
+            <p>And I'm a Python Developer with growing expertise in Machine Learning and Frontend Development. I’m
+                dedicated to learning and implementing innovative technologies to develop smart and responsive
+                solutions.
+
+            </p>
+            <div class="info-box">
+                <div class="email-info">
+                    <h5>Email :</h5>
+                    <span>awaisrafique322@gmail.com</span>
+                </div>
+            </div>
+            <div class="btn-box">
+                <a href="Resume/MAwaisCv.pdf" class="btn">Download CV</a>
+
+            </div>
+            <div class="social-icon">
+                <a href="https://www.linkedin.com/in/awais-rafique-5b7609298/"><i class='bx bxl-linkedin'></i></a>
+
+                <a href="https://www.instagram.com/markhordeveloper/"><i class='bx bxl-instagram'></i></a>
+                <a href="personalportfoio.freewebhostmost.com"><i class='bx bxl-dribbble'></i></a>
+
+            </div>
+        </div>
+        <div class="home-img">
+            <div class="img-box">
+                <img src="img/main.png">
+            </div>
+        </div>
+    </section>
+    <!-- About section -->
+    <section id="about" class="about">
+        <div class="img-about">
+            <img src="img/main.png" alt="awais img">
+            <div class="info-about1">
+                <span>1+</span>
+                <p>Years of Experience</p>
+            </div>
+            <div class="info-about2">
+                <span>20</span>
+                <p>Python Projects </p>
+            </div>
+            <div class="info-about3">
+                <span>10+</span>
+                <p>Machine Learning </p>
+            </div>
+        </div>
+        <div class="about-content">
+            <span>Let me introduce myself</span>
+            <h2>About Me</h2>
+            <h3>A story of Good</h3>
+            <p> My journey into programming started with a curiosity about how things work behind the scenes, which
+                quickly turned into a passion for Python. As I explored Python, I became fascinated with Machine
+                Learning and its potential to revolutionize industries. Working on various projects has challenged me to
+                think critically and embrace continuous learning. <span id="dots">...</span><span id="more">Moving
+                    forward, I aim to leverage my skills to create innovative solutions that make a meaningful impact.
+                    I’m particularly interested in integrating Machine Learning into everyday processes to enhance user
+                    experiences and streamline operations.</span></p>
+            <div class="btn-box">
+                <a href="#" class="btn" onclick="readMore()" id="myBtn">Read More!</a>
+            </div>
+        </div>
+    </section>
+    <!-- service Section -->
+    <section id="services" class="services">
+        <div class="main-text">
+            <span>what i will do for you</span>
+            <h2>Our Services</h2>
+        </div>
+        <div class="section-service">
+            <div class="service-box">
+                <i class='bx bx-code-block service-icon'></i>
+                <h3>Python Projects</h3>
+                <p>I offer custom Python script development for automation, data processing, and backend solutions. My
+                    expertise includes API integration, automating workflows, and managing databases with efficient and
+                    scalable Python code.
+                </p>
+                <div class="btn-box service-btn">
+                    <a href="https://en.wikipedia.org/wiki/Python_(programming_language)" class="btn">Read More!</a>
+                </div>
+            </div>
+            <div class="service-box">
+                <i class='bx bx-code service-icon'></i>
+                <h3>Machine Learning Projects</h3>
+                <p>I specialize in building and optimizing machine learning models using Python, handling everything
+                    from data preprocessing to deployment. My focus is on creating models that deliver actionable
+                    insights.
+                </p>
+                <div class="btn-box service-btn">
+                    <a href="https://en.wikipedia.org/wiki/Machine_learning" class="btn">Read More!</a>
+                </div>
+            </div>
+            <div class="service-box">
+                <i class='bx bx-code-curly service-icon'></i>
+                <h3>Frontend Projects</h3>
+                <p>I design and develop responsive websites with HTML, CSS, and JavaScript. I bring your ideas to life
+                    with interactive features featuring interactive elements and animations for a smooth user
+                    experience, ensuring high performance.
+
+                </p>
+                <div class="btn-box service-btn">
+                    <a href="https://en.wikipedia.org/wiki/Front-end_web_development" class="btn">Read More!</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- skill Section -->
+    <section id="skills" class="skills">
+        <div class="main-text">
+            <span>technical and professional</span>
+            <h2>My Skills</h2>
+        </div>
+
+        <div class="skill-main">
+            <div class="skill-left">
+                <h3>Technical skills</h3>
+                <div class="skill-bar">
+                    <div class="info">
+                        <p>HTML</p>
+                        <p>80%</p>
+                    </div>
+                    <div class="bar">
+                        <span class="html"></span>
+                    </div>
+                </div>
+
+
+                <div class="skill-bar">
+                    <div class="info">
+                        <p>CSS</p>
+                        <p>75%</p>
+                    </div>
+                    <div class="bar">
+                        <span class="css"></span>
+                    </div>
+                </div>
+
+                <div class="skill-bar">
+                    <div class="info">
+                        <p>Javascript</p>
+                        <p>50%</p>
+                    </div>
+                    <div class="bar">
+                        <span class="javascript"></span>
+                    </div>
+                </div>
+
+                <div class="skill-bar">
+                    <div class="info">
+                        <p>Python</p>
+                        <p>90%</p>
+                    </div>
+                    <div class="bar">
+                        <span class="python"></span>
+                    </div>
+                </div>
+
+                <div class="skill-bar">
+                    <div class="info">
+                        <p>Machine Learning</p>
+                        <p>80%</p>
+                    </div>
+                    <div class="bar">
+                        <span class="machinelearning"></span>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="skill-right">
+                <h3>professional Skills</h3>
+                <div class="professional">
+                    <div class="box">
+                        <div class="circle" data-dots="80" data-percent="80"></div>
+                        <div class="text">
+                            <big>80%</big>
+                            <small>Team Work</small>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="circle" data-dots="90" data-percent="90"></div>
+                        <div class="text">
+                            <big>90%</big>
+                            <small>Leadership</small>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="circle" data-dots="80" data-percent="85"></div>
+                        <div class="text">
+                            <big>85%</big>
+                            <small>Creativity</small>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="circle" data-dots="80" data-percent="95"></div>
+                        <div class="text">
+                            <big>95%</big>
+                            <small>Project Management</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section id="portfolio" class="portfolio">
+        <div class="main-text">
+            <span>What i will do for you</span>
+            <h2>Latest Project</h2>
+        </div>
+
+        <div class="container">
+            <div class="fillter-buttons">
+                <button class="btn" data-filter="all">All</button>
+                <button class="btn" data-filter=".python">Python </button>
+                <button class="btn" data-filter=".machine">Machine Learning</button>
+                <button class="btn" data-filter=".front">Frontend</button>
+
+            </div>
+            <div class="portfolio-gallery">
+
+                <div class="port-box mix python">
+                    <div class="port-image">
+                        <img src="Projectsimg/shop.png" alt="">
+                    </div>
+                    <div class="port-content">
+                        <h3>Shoe Shop Management</h3>
+                        <p>I developed a shoe management system in Python that handles inventory, with features for
+                            adding and tracking products efficiently.
+                        </p>
+                        <a href="https://github.com/AwaisRafique24011/shoe-Management-system"><i
+                                class='bx bx-link'></i></a>
+                    </div>
+                </div>
+
+                <div class="port-box mix python">
+                    <div class="port-image">
+                        <img src="Projectsimg/library.png" alt="">
+                    </div>
+                    <div class="port-content">
+                        <h3>library Management</h3>
+                        <p>I developed a library management system in Python, enabling efficient book, with features for
+                            adding and monitoring library inventory.
+                        </p>
+                        <a href="https://github.com/AwaisRafique24011/Library-Management"><i class='bx bx-link'></i></a>
+                    </div>
+                </div>
+
+
+                <div class="port-box mix python">
+                    <div class="port-image">
+                        <img src="Projectsimg/bank.png" alt="">
+                    </div>
+                    <div class="port-content">
+                        <h3>ATM Machine Management</h3>
+                        <p>I developed a ATM management system in Python, handling customer accounts and transactions
+                            with secure and efficient processing.
+                        </p>
+                        <a href="https://github.com/AwaisRafique24011/Atm-Machine"><i class='bx bx-link'></i></a>
+                    </div>
+                </div>
+
+
+
+
+                <div class="port-box mix machine">
+                    <div class="port-image">
+                        <img src="Projectsimg/face.png" alt="">
+                    </div>
+                    <div class="port-content">
+                        <h3>Face Detection</h3>
+                        <p>I developed a face detection system in Python that accurately identifies and tracks faces in
+                            real-time using computer vision techniques.
+                        </p>
+                        <a href="https://github.com/AwaisRafique24011/face-detection"><i class='bx bx-link'></i></a>
+                    </div>
+                </div>
+
+                <div class="port-box mix machine">
+                    <div class="port-image">
+                        <img src="Projectsimg/short.png" alt="">
+                    </div>
+                    <div class="port-content">
+                        <h3>Shortest Path Finder</h3>
+                        <p>"I created a shortest path finder in Python to efficiently determine the shortest route
+                            between nodes in a graph.
+                        </p>
+                        <a href="https://github.com/AwaisRafique24011/Shortest_Path-"><i class='bx bx-link'></i></a>
+                    </div>
+                </div>
+
+
+
+                <div class="port-box mix python">
+                    <div class="port-image">
+                        <img src="Projectsimg/file.png" alt="">
+                    </div>
+                    <div class="port-content">
+                        <h3>File Management System</h3>
+                        <p>I developed a file management system in Python for organizing and storing with features for
+                            searching and managing file operations.
+                        </p>
+                        <a href="https://github.com/AwaisRafique24011/File-management-program"><i
+                                class='bx bx-link'></i></a>
+                    </div>
+                </div>
+
+                <div class="port-box mix python">
+                    <div class="port-image">
+                        <img src="Projectsimg/grade.png" alt="">
+                    </div>
+                    <div class="port-content">
+                        <h3>Student Grade Management</h3>
+                        <p>I developed a Python system for managing and tracking student grades, with features for
+                            calculating averages.
+                        </p>
+                        <a href="https://github.com/AwaisRafique24011/File-management-program"><i
+                                class='bx bx-link'></i></a>
+                    </div>
+                </div>
+
+                <div class="port-box mix python">
+                    <div class="port-image">
+                        <img src="Projectsimg/bmi caculator.png" alt="">
+                    </div>
+                    <div class="port-content">
+                        <h3>BMI Calculator</h3>
+                        <p>I developed a Python system for managing and tracking BMI of Human, with features for
+                            recording data.
+                        </p>
+                        <a href="https://github.com/AwaisRafique24011/Oasis-infobyte/blob/main/BMI.py"><i
+                                class='bx bx-link'></i></a>
+                    </div>
+                </div>
+
+                <div class="port-box mix python">
+                    <div class="port-image">
+                        <img src="Projectsimg/voice assistant logo.png" alt="">
+                    </div>
+                    <div class="port-content">
+                        <h3>Voice Assistant</h3>
+                        <p>A Python-based voice assistant that performs tasks through voice commands, such as web searches, time inquiries, and more.
+                        </p>
+                        <a href="https://github.com/AwaisRafique24011/Oasis-infobyte/blob/main/assistant.py"><i
+                                class='bx bx-link'></i></a>
+                    </div>
+                </div>
+
+                <div class="port-box mix python">
+                    <div class="port-image">
+                        <img src="Projectsimg/strong password generator.png" alt="">
+                    </div>
+                    <div class="port-content">
+                        <h3>Strong Password Generator</h3>
+                        <p>A robust password generator that creates highly secure passwords with customizable length and complexity, ensuring optimal security.
+                        </p>
+                        <a href="https://github.com/AwaisRafique24011/Oasis-infobyte/blob/main/assistant.py"><i
+                                class='bx bx-link'></i></a>
+                    </div>
+                </div>
+
+                <div class="port-box mix python">
+                    <div class="port-image">
+                        <img src="Projectsimg/automation task.jpg" alt="">
+                    </div>
+                    <div class="port-content">
+                        <h3>Automation Task</h3>
+                        <p>An automation tool that organizes files, cleans data, generates reports, and efficiently runs all tasks in sequence.
+                        </p>
+                        <a href="https://github.com/AwaisRafique24011/Cognifyz/blob/main/automate.py"><i
+                                class='bx bx-link'></i></a>
+                    </div>
+                </div>
+
+                <div class="port-box mix python">
+                    <div class="port-image">
+                        <img src="Projectsimg/password strength checker and fibonacci.png" alt="">
+                    </div>
+                    <div class="port-content">
+                        <h3>Automation Task</h3>
+                        <p>A Python program that generates the Fibonacci series and includes a password strength checker for enhanced security validation.
+                        </p>
+                        <a href="https://github.com/AwaisRafique24011/Cognifyz/blob/main/fbseries.py"><i
+                                class='bx bx-link'></i></a>
+                    </div>
+                </div>
+
+                <div class="port-box mix python">
+                    <div class="port-image">
+                        <img src="Projectsimg/password strength checker and fibonacci.png" alt="">
+                    </div>
+                    <div class="port-content">
+                        <h3>Password Strength and Fb series</h3>
+                        <p>A Python program that generates the Fibonacci series and includes a password strength checker for enhanced security validation.
+                        </p>
+                        <a href="https://github.com/AwaisRafique24011/Cognifyz/blob/main/fbseries.py"><i
+                                class='bx bx-link'></i></a>
+                    </div>
+                </div>
+
+                <div class="port-box mix python">
+                    <div class="port-image">
+                        <img src="Projectsimg/count the word file manipution.png" alt="">
+                    </div>
+                    <div class="port-content">
+                        <h3>Count the Word in File</h3>
+                        <p>A Python program that counts the occurrences of each word in a file and displays the results in alphabetical order
+                        </p>
+                        <a href="https://github.com/AwaisRafique24011/Cognifyz/blob/main/file.py"><i
+                                class='bx bx-link'></i></a>
+                    </div>
+                </div>
+
+
+                <div class="port-box mix python">
+                    <div class="port-image">
+                        <img src="Projectsimg/web scraping.png" alt="">
+                    </div>
+                    <div class="port-content">
+                        <h3>Web Scraping</h3>
+                        <p>A beginner-level web scraping tool using Python to extract and parse data from HTML files.
+                        </p>
+                        <a href="https://github.com/AwaisRafique24011/Cognifyz/blob/main/webscraper.py"><i
+                                class='bx bx-link'></i></a>
+                    </div>
+                </div>
+
+                <div class="port-box mix python">
+                    <div class="port-image">
+                        <img src="Projectsimg/number guess game.png" alt="">
+                    </div>
+                    <div class="port-content">
+                        <h3>Number Guess Game</h3>
+                        <p>A fun number guessing game in Python where players try to guess a randomly generated number within a set range.
+                        </p>
+                        <a href="https://github.com/AwaisRafique24011/Cognifyz/blob/main/file.py"><i
+                                class='bx bx-link'></i></a>
+                    </div>
+                </div>
+
+                <div class="port-box mix python">
+                    <div class="port-image">
+                        <img src="Projectsimg/hangman.jpg" alt="">
+                    </div>
+                    <div class="port-content">
+                        <h3>Hangman Game</h3>
+                        <p>A classic Hangman game implemented in Python, where players guess letters to uncover a hidden word before running out of attempts.
+                        </p>
+                        <a href="https://github.com/AwaisRafique24011/hangman/blob/main/hangman.py"><i
+                                class='bx bx-link'></i></a>
+                    </div>
+                </div>
+
+                <div class="port-box mix python">
+                    <div class="port-image">
+                        <img src="Projectsimg/atm card validation.png" alt="">
+                    </div>
+                    <div class="port-content">
+                        <h3>ATM Card Validation</h3>
+                        <p>A Python program that validates ATM card numbers using the Luhn algorithm to ensure accuracy and detect potential errors or fraud.
+                        </p>
+                        <a href="https://github.com/AwaisRafique24011/hangman/blob/main/hangman.py"><i
+                                class='bx bx-link'></i></a>
+                    </div>
+                </div>
+
+                <div class="port-box mix python">
+                    <div class="port-image">
+                        <img src="Projectsimg/temp and weight.png" alt="">
+                    </div>
+                    <div class="port-content">
+                        <h3>Temperature and Weight</h3>
+                        <p>A Python tool that efficiently converts temperatures between Celsius, Fahrenheit, and Kelvin, as well as weights between units like kilograms, pounds, and grams.
+                        </p>
+                        <a href="https://github.com/AwaisRafique24011/temp-and-weight-"><i
+                                class='bx bx-link'></i></a>
+                    </div>
+                </div>
+                
+
+                <div class="port-box mix front">
+                    <div class="port-image">
+                        <a href="https://awaisrafique24011.github.io/netflix-CLone/"><img
+                                src="Projectsimg/Netflix Clone.png" alt=""></a>
+                    </div>
+                    <div class="port-content">
+                        <h3>Netflix Clone</h3>
+                        <p>I created a Netflix clone with a sleek UI, responsive design, and dynamic content loading,
+                            including user authentication and video streaming.
+                        </p>
+                        <a href="https://awaisrafique24011.github.io/netflix-CLone/"><i class='bx bx-link'></i></a>
+                    </div>
+                </div>
+
+                <div class="port-box mix front">
+                    <div class="port-image">
+                        <img src="Projectsimg/goblin.png" alt="">
+                    </div>
+                    <div class="port-content">
+                        <h3>Goblin Clone</h3>
+                        <p>I built a responsive Goblin clone using HTML and CSS, recreating the design with precise
+                            styling and layout.
+                        </p>
+                        <a href="https://awaisrafique24011.github.io/Goblin/"><i class='bx bx-link'></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- contact section -->
+
+    <section id="contact" class="contact">
+        <div class="main-text">
+            <span>Ask me question</span>
+            <h2>Contact Me</h2>
+        </div>
+        <form id="contact-form">
+            <input type="text" id="name" name="name" placeholder="Your Name.." required>
+            <input type="email" id="email" name="email" placeholder="Your Email.." required>
+            <input type="text" id="title" name="title" placeholder="Question Title.." required>
+            <textarea id="message" name="message" cols="30" rows="10" placeholder="Your Question.." required></textarea>
+            <div class="btn-box service-btn">
+                <a href="#" class="btn" onclick="sendMail(); return false;">Send Message</a>
+            </div>
+
+        </form>
+        <!-- footer section -->
+
+    </section>
+
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 Muhammad Awais. All rights reserved.</p>
+            <p>Designed and developed by M.Awais Rafiqe.</p>
+            <div class="link">
+                <a href="www.linkedin.com/in/awais-rafique-5b7609298"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://www.instagram.com/markhordeveloper/"><i class='bx bxl-instagram'></i></a>
+                <a href="personalportfoio.freewebhostmost.com"><i class='bx bxl-dribbble'></i></a>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script src="mixitup.min.js"></script>
+    <script src="chat.js"></script>
+</body>
+
+</html>
